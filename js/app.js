@@ -601,3 +601,23 @@ function StatsCount(e) {
     }
   }, 2000 / goal);
 }
+
+/*
+  Up Bottun
+*/
+let upSpan = document.querySelector(".up");
+
+window.onscroll = function () {
+  // Up Bottun
+  if (this.scrollY >= 200) {
+    upSpan.classList.add("show");
+  } else {
+    upSpan.classList.remove("show");
+  }
+};
+
+upSpan.onclick = function () {
+  window.scrollTo({
+    top: 0,
+  });
+};
