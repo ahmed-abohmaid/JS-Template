@@ -48,6 +48,54 @@ a {
   background-color: var(--main-color);
   transition: var(--main-duration);
 }
+
+.up {
+  position: fixed;
+  right: -30px;
+  bottom: 10px;
+  z-index: 1000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: var(--main-color);
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--main-duration);
+}
+
+.up .tooltiptext {
+  visibility: hidden;
+  width: 4em;
+  background-color: rgba(0, 0, 0, 0.253);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: calc(-100% - 40px);
+}
+
+.up .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.253);
+}
+
+.up:hover .tooltiptext {
+  visibility: visible;
+}
+
+.up.show {
+  right: 10px;
+}
 /* End global roles */
 
 /* Start Custome use */
@@ -349,37 +397,34 @@ a {
 }
 
 .bullets .bullet .bullet-tooltip {
-  background-color: var(--main-color);
+  visibility: hidden;
   width: 120px;
+  background-color: rgba(0, 0, 0, 0.253);
   color: #fff;
+  text-align: center;
+  border-radius: 6px;
   padding: 5px;
   position: absolute;
-  right: 30px;
-  top: -14px;
-  text-align: center;
-  border-radius: 4px;
+  z-index: 1;
+  top: -11px;
+  right: 25px;
   cursor: default;
   pointer-events: none;
-  display: none;
-  transition: var(--main-duration);
 }
 
 .bullets .bullet:hover .bullet-tooltip {
-  display: block;
+  visibility: visible;
 }
 
 .bullets .bullet .bullet-tooltip::before {
   content: "";
-  border-style: solid;
-  border-width: 10px;
-  height: 0;
-  width: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  right: -20px;
-  border-color: transparent transparent transparent var(--main-color);
-  transition: var(--main-duration);
+  right: -10px;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.253);
 }
 /* End bullets */
 
