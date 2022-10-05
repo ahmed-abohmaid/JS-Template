@@ -313,7 +313,7 @@ function changeBackground() {
     backgroundInterval = setInterval(() => {
       // Get random img
       let ranImg = imgsArr[Math.floor(Math.random() * imgsArr.length)];
-      landingPage.style.backgroundImage = `url(../imgs/${ranImg})`;
+      landingPage.style.backgroundImage = `url(imgs/${ranImg})`;
     }, 15000);
   }
 }
