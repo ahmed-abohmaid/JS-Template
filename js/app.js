@@ -167,7 +167,7 @@ function showOptions() {
   optionBox.classList.toggle("open");
 
   // To close options box when click on the body
-  document.onclick = function (e) {
+  window.onclick = function (e) {
     if (e.target.id === "option-overlay") {
       iconRigth.classList.remove("close");
       iconLeft.classList.add("close");
