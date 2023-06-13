@@ -11,7 +11,7 @@
 Awesome JavaScript Template using HTML, CSS, and JavaScript.
 
 Live Project :
-<a href="https://ahmed-abohmaid.github.io/JS-Template/">Special Design</a>
+<a href="https://js-template-omega.vercel.app/">Special Design</a>
 
 <hr>
 
@@ -27,9 +27,6 @@ Live Project :
 * AOS : 
 For animations 
 (https://github.com/michalsnik/aos)
-* Headroom :
-To Hide your header while scrolling to bottom 
-(https://wicky.nillia.ms/headroom.js/)
 
 
 <hr>
