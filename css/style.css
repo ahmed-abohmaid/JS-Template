@@ -431,7 +431,7 @@ a {
 /* Start Landing Page */
 .landing-page {
   min-height: calc(100vh);
-  background-image: url(../imgs/land_5.webp);
+  background-image: url(../imgs/land_5.jpg);
   background-size: cover;
   position: relative;
 }
