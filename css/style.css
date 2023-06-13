@@ -431,7 +431,7 @@ a {
 /* Start Landing Page */
 .landing-page {
   min-height: calc(100vh);
-  background-image: url(../imgs/land_1.jpg);
+  background-image: url(../imgs/land_5.webp);
   background-size: cover;
   position: relative;
 }
@@ -1210,7 +1210,7 @@ header .menu-icon.close::after {
 
 /* Start Contact */
 .contact {
-  background-image: url(../imgs/contact.png);
+  background-image: url(../imgs/contact.webp);
   background-size: cover;
   position: relative;
   padding-top: 90px;
