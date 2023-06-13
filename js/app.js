@@ -42,7 +42,7 @@ const menuBtn = document.getElementById("menu-btn");
 const menuList = document.getElementById("list");
 
 // Start build nav links
-const createNavLinks = function () {
+function createNavLinks() {
   for (const section of sections) {
     const sectionId = section.getAttribute("id");
     const sectionName = section.dataset.nav;
@@ -111,16 +111,6 @@ sections.forEach((section) => {
 });
 
 /*
-  For hide header when scroll from headroom library
-*/
-// grab an element
-var myElement = document.querySelector("header");
-// construct an instance of Headroom, passing the element
-var headroom = new Headroom(myElement);
-// initialise
-headroom.init();
-
-/*
   Dealing with menu btn to show our list
   close menu on scrolling
 */
@@ -136,13 +126,6 @@ document.onclick = function (e) {
   if (e.target === mySpan || e.target === menuBtn) {
     menuBtn.classList.toggle("close");
     menuList.classList.toggle("open");
-  }
-};
-
-window.onscroll = function () {
-  if (menuBtn.classList.contains("close")) {
-    menuBtn.classList.remove("close");
-    menuList.classList.remove("open");
   }
 };
 
