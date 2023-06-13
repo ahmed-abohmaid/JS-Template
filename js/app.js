@@ -280,12 +280,12 @@ function changeBackground() {
   if (backgroundOption === true) {
     // Make our imgs into array
     let imgsArr = [
-      "land_1.jpg",
-      "land_2.jpg",
-      "land_3.jpg",
-      "land_4.jpg",
-      "land_5.jpg",
-      "land_6.jpg",
+      "land_1.webp",
+      "land_2.webp",
+      "land_3.webp",
+      "land_4.webp",
+      "land_5.webp",
+      "land_6.webp",
     ];
 
     // Start Change
